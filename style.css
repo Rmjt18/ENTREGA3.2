@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 1rem;
+
+}
