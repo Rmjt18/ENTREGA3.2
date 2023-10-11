@@ -13,3 +13,32 @@ body{
     gap: 1rem;
 
 }
+
+.pizzas{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.imagen{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid var(--background);
+}
+
+#id1, #id2, #id3, #id4, #id5,{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(51, 85, 100);
+    padding:25px;
+    height: 700;
+    border-radius: 15px;
+    gap: 1rem;
+}

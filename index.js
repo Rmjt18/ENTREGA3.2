@@ -101,9 +101,11 @@ const buscarpizza = ()=>{
   console.log(pizzaFiltrada)
 } 
 
+const nuevabusqueda = () => 
+
 
 const init = () => {
-buttonbuscar.addEventListener("click",buscarpizza)
+buttonbuscar.addEventListener("click", buscarpizza)
 buttonnuevabusqueda.addEventListener("click", nuevabusqueda )
 
 }
@@ -138,7 +140,62 @@ init()
 
 
 
+// // rodrigo 
+// const h1=document.getElementById("h1")
+// const input=document.getElementById("input")
+// const buttonbuscar =document.getElementById("buscar")
+// const buttonnuevabusqueda =document.getElementById("nuevabusqueda")
+// const container =document.querySelector(".container")
 
+// // const h2 = document.createElement("h2")
+// // h2.innerHTML="la pizza que elegiste es exquisita"
+// // container.appendChild(h2)
+// // console.log(h2);
+
+// // const nuevabusqueda = () =>{
+// //   const h2 = document.querySelector("h2")
+// //   container.removeChild(h2)
+
+
+// // si esta vacio 
+// const isEmpty= (input) => {
+//   return !input.value.trim().length;
+// };
+// const checkInput = (input) => {
+//   console.log(isEmpty(input));
+// }
+
+
+
+// // funcion de error
+
+// const showError= (input, message) =>{
+//   const formField= input
+
+// }
+
+// const isbetween = (input,min,max) => {
+//   return input.value.length >= min && input.value.length <= max;
+// }
+
+
+
+
+
+// const buscarpizza = pizzas.filter((pizza) => pizzas.id.includes(isbetween))
+
+//   console.dir(input.value);
+
+  
+
+
+// const init = () => {
+// buttonbuscar.addEventListener("input",buscarpizza)
+// buttonnuevabusqueda.addEventListener("click", nuevabusqueda )
+
+// }
+
+// init()
 
 
 
