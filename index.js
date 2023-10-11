@@ -103,7 +103,7 @@ const buscarpizza = ()=>{
 
 const nuevabusqueda = () => {
   const input=document.getElementById("input")
-  container.removeChild(input.value)
+  container.removeChild(input)
 }
 
 
