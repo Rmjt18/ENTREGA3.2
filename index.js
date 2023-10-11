@@ -101,7 +101,10 @@ const buscarpizza = ()=>{
   console.log(pizzaFiltrada)
 } 
 
-const nuevabusqueda = () => 
+const nuevabusqueda = () => {
+  const input=document.getElementById("input")
+  container.removeChild(input.value)
+}
 
 
 const init = () => {
