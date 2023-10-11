@@ -47,6 +47,7 @@ const pizzas = [
     imagen: "./img/anana.png",
   },
 ];
+
 const h1=document.getElementById("h1")
 const input=document.getElementById("input")
 const buttonbuscar =document.getElementById("buscar")
@@ -75,8 +76,8 @@ const checkInput = (input) => {
 
 // funcion de error
 
-const showError= (input, message) =>{
-  const formField= input
+const showError= (message) =>{
+  container.innerHTML = message
 
 }
 
@@ -88,20 +89,56 @@ const isbetween = (input,min,max) => {
 
 
 
-const buscarpizza = pizzas.filter((pizza) => pizzas.id.includes(isbetween))
-
-  console.dir(input.value);
-
-  
+const buscarpizza = ()=>{
+  if(input.value > pizzas.length || input.value < 0){
+    showError('No existe el producto') 
+    return
+  }else if (input.value.length == 0){
+    showError('Debe ingresar un valor')
+    return
+  }
+  let pizzaFiltrada = pizzas.filter((pizza) => pizza.id == input.value)
+  console.log(pizzaFiltrada)
+} 
 
 
 const init = () => {
-buttonbuscar.addEventListener("input",buscarpizza)
+buttonbuscar.addEventListener("click",buscarpizza)
 buttonnuevabusqueda.addEventListener("click", nuevabusqueda )
 
 }
 
 init()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
